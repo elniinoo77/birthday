@@ -9,6 +9,20 @@ body, html {
   overflow: hidden;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 /* Bagian 2: Tombol musik */
 .music-toggle {
   position: fixed;
