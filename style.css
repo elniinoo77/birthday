@@ -1,5 +1,6 @@
 /* Mengimpor font yang digunakan */
 @import url(https://fonts.googleapis.com/css?family=Allan:700,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap);
 
 /* Reset dasar dan pengaturan halaman */
 body, html {
@@ -714,6 +715,7 @@ h1, h2, h3, h4, h5, h6 {
   .letter-text {
     margin-top: 30px;
     padding: 0 20px;
+
     color: #333;
   }
   
