@@ -13,7 +13,7 @@ body, html {
 .music-toggle {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.2);
   border: none;
@@ -596,7 +596,7 @@ body, html {
   }
   
   .long-letter-content {
-    background: #fff;
+    background: #dddfd7;
     width: 90%;
     max-width: 1000px;
     height: 90vh;
@@ -711,8 +711,7 @@ body, html {
   
   .message-content p {
     line-height: 1.8;
-    font-weight: 300;
-    font-style: bold;
+    font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 25px;
   }
@@ -720,12 +719,13 @@ body, html {
   .signature {
     text-align: right;
     font-style: italic;
-    font-style: bold;
+    font-weight: bold;
     margin-top: 40px;
   }
 
   .signature p {
     font-size: 1.1rem;
+    font-weight: bolder;
     margin : 5px 0;
   }
   
