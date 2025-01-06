@@ -200,5 +200,37 @@ $(function(){
     }
 });
 
+// Tentukan tanggal dan waktu akhir (misalnya ulang tahun teman Anda)
+const targetDate = new Date("2025-01-08T00:00:00").getTime();
+
+// Fungsi hitungan mundur
+const countdownElement = document.getElementById('timer');
+const envelope = document.querySelector('.envelope');
+const countdownContainer = document.getElementById('countdown');
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeRemaining = targetDate - now;
+
+    if (timeRemaining > 0) {
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else {
+        clearInterval(countdownInterval);
+        countdownContainer.style.display = 'none';
+        envelope.classList.remove('disabled'); // Aktifkan amplop
+    }
+}
+
+// Blokir amplop sebelum hitungan mundur selesai
+envelope.classList.add('disabled');
+
+// Jalankan hitungan mundur setiap detik
+const countdownInterval = setInterval(updateCountdown, 1000);
+
 // Mulai animasi
 animate();

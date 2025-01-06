@@ -864,3 +864,27 @@ body, html {
 .hidden {
   display: none;
 }
+
+.countdown {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.countdown h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.envelope.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
