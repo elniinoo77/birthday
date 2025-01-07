@@ -201,7 +201,7 @@ $(function(){
 });
 
 // Tentukan tanggal dan waktu akhir (misalnya ulang tahun teman Anda)
-const targetDate = new Date("2025-01-08T00:00:00").getTime();
+const targetDate = new Date("2025-01-09T00:00:00").getTime();
 
 // Fungsi hitungan mundur
 const countdownElement = document.getElementById('timer');
